@@ -6,15 +6,15 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/java/features",   // Feature dosyalarımızın yolu
-        glue = {"stepdefinitions"},                           // Step definition paketinin yolu
+        features = "src/test/java/features",
+        glue = {"stepdefinitions"},
         plugin = {
-                "pretty",                           // Konsol çıktısını daha okunur hale getirir
+                "pretty",
                 "html:target/cucumber-reports/cucumber.html",
                 "json:target/cucumber-reports/cucumber.json"
         }
 )
 public class DataTablesEditorRunner {
-    // Boş bırakabilirsiniz, Cucumber otomatik olarak bu Runner'ı kullanacak
+
 }
 //runner
